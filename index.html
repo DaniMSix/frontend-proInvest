@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProInvest Latinoamérica</title>
+    <link rel="stylesheet" href="./tailwind.css" />
+  </head>
+  <body class="header">
+    <div class="grey-section">
+      <!-- Contenido de la sección gris aquí -->
+    </div>
+
+    <div class="seccion-inversion">
+      <h1 class="titulo">Simulador individual</h1>
+      <h3 class="subtitulo">Visualiza tu futuro financiero: prueba nuestro simulador de inversión</h3>
+
+      <form action="#" method="POST" class="mx-auto mt-8 max-w-xl sm:mt-20">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+      <div>
+        <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">Importe a invertir:</label>
+        <div class="mt-2.5">
+          <input type="text" name="first-name" id="importe-invertir" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        </div>
+      </div>
+      </form>
+
+      <body class="flex flex-col items-center justify-center w-screen mx-2.5 h-screen px-10 py-20 text-gray-700 bg-gray-100">
+
+	<!-- 
+	NOTES
+	For the purpose of this demo, the heights of the bars are simply relying on native Tailwind CSS classes.
+	In a proper implementation, where it represents real data, these height should be dynamically generated based on the data that feeds them.
+	-->
+	
+	<!-- Component Start -->
+    <div class="flex flex-col items-center w-full max-w-screen-md mx-96 p-9 pb-10 mt-72 bg-white rounded-lg shadow-xl sm:p-10">
+        <h2 class="text-xl font-bold">Rendimiento</h2>
+        <div class="flex items-end flex-grow w-full mt-2 space-x-2 sm:space-x-3">
+            <div class="relative flex flex-col items-center flex-grow pb-5 group">
+                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$37,500</span>
+                <div class="flex items-end w-full">
+                    <div class="relative flex justify-center flex-grow h-8 bg-indigo-200"></div>
+                </div>
+                <span class="absolute bottom-0 text-xs font-bold">Jan</span>
+            </div>
+            <div class="relative flex flex-col items-center flex-grow pb-5 group">
+                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$45,000</span>
+                <div class="flex items-end w-full">
+                    <div class="relative flex justify-center flex-grow h-10 bg-indigo-200"></div>
+                </div>
+                <span class="absolute bottom-0 text-xs font-bold">Feb</span>
+            </div>
+            <div class="relative flex flex-col items-center flex-grow pb-5 group">
+                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$47,500</span>
+                <div class="flex items-end w-full">
+                    <div class="relative flex justify-center flex-grow h-10 bg-indigo-200"></div>
+                </div>
+                <span class="absolute bottom-0 text-xs font-bold">Mar</span>
+            </div>
+            <div class="relative flex flex-col items-center flex-grow pb-5 group">
+                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$50,000</span>
+                <div class="flex items-end w-full">
+                    <div class="relative flex justify-center flex-grow h-10 bg-indigo-200"></div>
+                </div>
+                <span class="absolute bottom-0 text-xs font-bold">Apr</span>
+            </div>
+            <div class="relative flex flex-col items-center flex-grow pb-5 group">
+                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$47,500</span>
+                <div class="flex items-end w-full">
+                    <div class="relative flex justify-center flex-grow h-10 bg-indigo-200"></div>	
+                </div>
+                <span class="absolute bottom-0 text-xs font-bold">May</span>
+            </div>
+            <div class="relative flex flex-col items-center flex-grow pb-5 group">
+                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$55,000</span>
+                <div class="flex items-end w-full">
+                    <div class="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
+                </div>
+                <span class="absolute bottom-0 text-xs font-bold">Jun</span>
+            </div>
+            <div class="relative flex flex-col items-center flex-grow pb-5 group">
+                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$60,000</span>
+                <div class="flex items-end w-full">
+                    <div class="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
+                </div>
+                <span class="absolute bottom-0 text-xs font-bold">Jul</span>
+            </div>
+            <div class="relative flex flex-col items-center flex-grow pb-5 group">
+                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$57,500</span>
+                <div class="flex items-end w-full">
+                    <div class="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
+                </div>
+                <span class="absolute bottom-0 text-xs font-bold">Aug</span>
+            </div>
+            <div class="relative flex flex-col items-center flex-grow pb-5 group">
+                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$67,500</span>
+                <div class="flex items-end w-full">
+                    <div class="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
+                </div>
+                <span class="absolute bottom-0 text-xs font-bold">Sep</span>
+            </div>
+            <div class="relative flex flex-col items-center flex-grow pb-5 group">
+                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$65,000</span>
+                <div class="flex items-end w-full">
+                    <div class="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
+                </div>
+                <span class="absolute bottom-0 text-xs font-bold">Oct</span>
+            </div>
+            <div class="relative flex flex-col items-center flex-grow pb-5 group">
+                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$70,000</span>
+                <div class="flex items-end w-full">
+                    <div class="relative flex justify-center flex-grow h-8 bg-indigo-200"></div>
+                </div>
+                <span class="absolute bottom-0 text-xs font-bold">Nov</span>
+            </div>
+            <div class="relative flex flex-col items-center flex-grow pb-5 group">
+                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$75,000</span>
+                <div class="flex items-end w-full">
+                    <div class="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
+                </div>
+                <span class="absolute bottom-0 text-xs font-bold">Dec</span>
+            </div>
+        </div>
+    </div>
+    <!-- Component End  -->
+</body>
+      
+    </div>
+
+    <img
+      src="public/img/img-logotipo-empresa.png"
+      alt="logotipo-ProInvest Latinoamérica"
+      class="logo"
+    />
+
+    <span class="header-text"
+      >Compara inversiones y<br />toma decisiones<br />inteligentes para tu<br />futuro
+      financiero</span
+    >
+
+    <img src="public/img/img-linea.png" alt="linea" class="linea" />
+
+    <div class="boton-azul">
+      <button
+        type="button"
+        data-twe-ripple-init
+        data-twe-ripple-color="light"
+        class="inline-block rounded bg-blue-950 px-6 pb-2 pt-2.5 text-sm font-bold leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-blue-950 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+      >
+        Iniciar sesión
+      </button>
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script type="module" src="scripts/init.js"></script>
+  </body>
+</html>
