@@ -6,170 +6,549 @@
     <title>ProInvest Latinoamérica</title>
     <link rel="stylesheet" href="./tailwind.css" />
   </head>
-  <body class="header">
+  <div class="header">
     <div class="grey-section">
-      <!-- Contenido de la sección gris aquí -->
     </div>
+    
 
-    <div class="seccion-inversion">
-      <h1 class="titulo">Simulador individual</h1>
-      <h3 class="subtitulo">Visualiza tu futuro financiero: prueba nuestro simulador de inversión</h3>
-
-      <form action="#" method="POST" class="mx-auto mt-8 max-w-xl sm:mt-20">
-        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-      <div>
-        <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">Importe a invertir:</label>
-        <div class="mt-2.5">
-          <input type="text" name="first-name" id="importe-invertir" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-        </div>
-      </div>
-      </form>
-
-      <body class="flex flex-col items-center justify-center w-screen mx-2.5 h-screen px-10 py-20 text-gray-700 bg-gray-100">
-
-	<!-- 
-	NOTES
-	For the purpose of this demo, the heights of the bars are simply relying on native Tailwind CSS classes.
-	In a proper implementation, where it represents real data, these height should be dynamically generated based on the data that feeds them.
-	-->
-	
-	<!-- Component Start -->
-    <div class="flex flex-col items-center w-full max-w-screen-md mx-96 p-9 pb-10 mt-72 bg-white rounded-lg shadow-xl sm:p-10">
-        <h2 class="text-xl font-bold">Rendimiento</h2>
-        <div class="flex items-end flex-grow w-full mt-2 space-x-2 sm:space-x-3">
-            <div class="relative flex flex-col items-center flex-grow pb-5 group">
-                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$37,500</span>
-                <div class="flex items-end w-full">
-                    <div class="relative flex justify-center flex-grow h-8 bg-indigo-200"></div>
-                </div>
-                <span class="absolute bottom-0 text-xs font-bold">Jan</span>
-            </div>
-            <div class="relative flex flex-col items-center flex-grow pb-5 group">
-                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$45,000</span>
-                <div class="flex items-end w-full">
-                    <div class="relative flex justify-center flex-grow h-10 bg-indigo-200"></div>
-                </div>
-                <span class="absolute bottom-0 text-xs font-bold">Feb</span>
-            </div>
-            <div class="relative flex flex-col items-center flex-grow pb-5 group">
-                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$47,500</span>
-                <div class="flex items-end w-full">
-                    <div class="relative flex justify-center flex-grow h-10 bg-indigo-200"></div>
-                </div>
-                <span class="absolute bottom-0 text-xs font-bold">Mar</span>
-            </div>
-            <div class="relative flex flex-col items-center flex-grow pb-5 group">
-                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$50,000</span>
-                <div class="flex items-end w-full">
-                    <div class="relative flex justify-center flex-grow h-10 bg-indigo-200"></div>
-                </div>
-                <span class="absolute bottom-0 text-xs font-bold">Apr</span>
-            </div>
-            <div class="relative flex flex-col items-center flex-grow pb-5 group">
-                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$47,500</span>
-                <div class="flex items-end w-full">
-                    <div class="relative flex justify-center flex-grow h-10 bg-indigo-200"></div>	
-                </div>
-                <span class="absolute bottom-0 text-xs font-bold">May</span>
-            </div>
-            <div class="relative flex flex-col items-center flex-grow pb-5 group">
-                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$55,000</span>
-                <div class="flex items-end w-full">
-                    <div class="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
-                </div>
-                <span class="absolute bottom-0 text-xs font-bold">Jun</span>
-            </div>
-            <div class="relative flex flex-col items-center flex-grow pb-5 group">
-                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$60,000</span>
-                <div class="flex items-end w-full">
-                    <div class="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
-                </div>
-                <span class="absolute bottom-0 text-xs font-bold">Jul</span>
-            </div>
-            <div class="relative flex flex-col items-center flex-grow pb-5 group">
-                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$57,500</span>
-                <div class="flex items-end w-full">
-                    <div class="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
-                </div>
-                <span class="absolute bottom-0 text-xs font-bold">Aug</span>
-            </div>
-            <div class="relative flex flex-col items-center flex-grow pb-5 group">
-                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$67,500</span>
-                <div class="flex items-end w-full">
-                    <div class="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
-                </div>
-                <span class="absolute bottom-0 text-xs font-bold">Sep</span>
-            </div>
-            <div class="relative flex flex-col items-center flex-grow pb-5 group">
-                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$65,000</span>
-                <div class="flex items-end w-full">
-                    <div class="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
-                </div>
-                <span class="absolute bottom-0 text-xs font-bold">Oct</span>
-            </div>
-            <div class="relative flex flex-col items-center flex-grow pb-5 group">
-                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$70,000</span>
-                <div class="flex items-end w-full">
-                    <div class="relative flex justify-center flex-grow h-8 bg-indigo-200"></div>
-                </div>
-                <span class="absolute bottom-0 text-xs font-bold">Nov</span>
-            </div>
-            <div class="relative flex flex-col items-center flex-grow pb-5 group">
-                <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$75,000</span>
-                <div class="flex items-end w-full">
-                    <div class="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
-                </div>
-                <span class="absolute bottom-0 text-xs font-bold">Dec</span>
-            </div>
-        </div>
-    </div>
-    <!-- Component End  -->
-</body>
-      
-    </div>
-
-    <img
-      src="public/img/img-logotipo-empresa.png"
+    <img src="/img/img-logotipo-empresa.png"
       alt="logotipo-ProInvest Latinoamérica"
-      class="logo"
-    />
+      class="logo"/>
+      
 
     <span class="header-text"
       >Compara inversiones y<br />toma decisiones<br />inteligentes para tu<br />futuro
-      financiero</span
-    >
+      financiero</span>
 
-    <img src="public/img/img-linea.png" alt="linea" class="linea" />
+    <img src="/img/img-linea.png" alt="linea" class="linea" />
 
     <div class="boton-azul">
       <button
         type="button"
         data-twe-ripple-init
         data-twe-ripple-color="light"
-        class="inline-block rounded bg-blue-950 px-6 pb-2 pt-2.5 text-sm font-bold leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-blue-950 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-      >
-        Iniciar sesión
+        class="inline-block rounded bg-blue-950 px-6 pb-2 pt-2.5 text-sm font-bold leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out
+         hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-blue-950 focus:shadow-primary-2 focus:outline-none focus:ring-0
+          active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none
+         dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+        Crear una cuenta
       </button>
     </div>
+  </div>
+
+  <!--Sección de cuadros-->
+      <div class="absolute -mt-20 mx-12 max-w-7xl px-4 z-10 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-4xl">
+          <dl class="rounded-lg bg-white dark:bg-gray-800 shadow-lg sm:grid sm:grid-cols-3">
+            <div class="flex flex-col border-b border-gray-100 dark:border-gray-700 p-6 text-center sm:border-0 sm:border-r">
+              <dt class="order-2 mt-2 text-lg font-normal leading-6 text-gray-500 dark:text-gray-300">Data Sources, including APIs and databases</dt>
+              <dd class="order-1 text-5xl font-bold tracking-tight text-green-600 dark:text-green-400"><span>30</span>+</dd>
+            </div>
+            <div class="flex flex-col border-t border-b border-gray-100 dark:border-gray-700 p-6 text-center sm:border-0 sm:border-l sm:border-r">
+              <dt class="order-2 mt-2 text-lg font-normal leading-6 text-gray-500 dark:text-gray-300">Analytic Tools and Machine Learning Models</dt>
+              <dd class="order-1 text-5xl font-bold tracking-tight text-green-600 dark:text-green-400"><span>100</span>+</dd>
+            </div>
+            <div class="flex flex-col border-t border-gray-100 dark:border-gray-700 p-6 text-center sm:border-0 sm:border-l">
+              <dt class="order-2 mt-2 text-lg font-normal leading-6 text-gray-500 dark:text-gray-300">Real-time Data Streams and Dashboards</dt>
+              <dd class="order-1 text-5xl font-bold tracking-tight text-green-600 dark:text-green-400"><span>10</span>+</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
 
 
+<!--Sección simulador-->  
+  
+  <div class="seccion-white">
+    <h1 class="titulo">Simulador individual</h1>
+      <h3 class="subtitulo">
+        Visualiza tu futuro financiero: prueba nuestro simulador de inversión
+      </h3>
+     
+    <form>
+        <div class="relative mb-3 custom-input-container" data-twe-input-wrapper-init>
+          <input
+            type="text"
+            class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] 
+            outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100
+            peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none
+            dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary
+            [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+            id="exampleFormControlInput1"
+            placeholder="Example label" />
+              <label
+                for="exampleFormControlInput1"
+                class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200
+                 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8]
+                 peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none
+                  <!-- dark:text-neutral-400 dark:peer-focus:text-primary">
+                Importe a invertir:
+              </label>
+        </div>
+        <div class="relative personalizacion-dropdown" data-twe-dropdown-position="dropend" >
+            <a
+              class="flex items-center rounded bg-neutral-300 px-6 pb-2 pt-2.5 text-xs font-medium  leading-normal
+             text-black shadow-primary-3 transition duration-150 ease-in-out
+             hover:bg-neutral-600 hover:shadow-primary-2
+             focus:bg-neutral-700 focus:shadow-primary-2 focus:outline-none focus:ring-0
+             active:bg-neutral-900 active:shadow-primary-2 motion-reduce:transition-none
+             dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+              href="#"
+              type="button"
+              id="dropdownMenuButton2"
+              data-twe-dropdown-toggle-ref
+              aria-expanded="false"
+              data-twe-ripple-init
+              data-twe-ripple-color="light">
+              Tipo de inversión
+              <span class="ms-2 w-2 [&>svg]:h-5 [&>svg]:w-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25
+                     4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+            </a>
+            <ul
+              class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none
+               bg-white bg-clip-padding text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
+              aria-labelledby="dropdownMenuButton2"
+              data-twe-dropdown-menu-ref>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700
+                   hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline
+                    dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="#"
+                  data-twe-dropdown-item-ref
+                  >Acciones</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700
+                   hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline
+                    dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="#"
+                  data-twe-dropdown-item-ref
+                  >Bonos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700
+                   hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline
+                    dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="#"
+                  data-twe-dropdown-item-ref
+                  >Bienes raíces</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="relative personalizacion-dropdown" data-twe-dropdown-position="dropend" >
+            <a
+              class="flex items-center rounded bg-neutral-300 px-6 pb-2 pt-2.5 text-xs font-medium  leading-normal
+             text-black shadow-primary-3 transition duration-150 ease-in-out
+             hover:bg-neutral-600 hover:shadow-primary-2
+             focus:bg-neutral-700 focus:shadow-primary-2 focus:outline-none focus:ring-0
+             active:bg-neutral-900 active:shadow-primary-2 motion-reduce:transition-none
+             dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+              href="#"
+              type="button"
+              id="dropdownMenuButton2"
+              data-twe-dropdown-toggle-ref
+              aria-expanded="false"
+              data-twe-ripple-init
+              data-twe-ripple-color="light">
+              Plazo de inversión
+              <span class="ms-2 w-2 [&>svg]:h-5 [&>svg]:w-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25
+                     4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+            </a>
+            <ul
+              class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none
+               bg-white bg-clip-padding text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
+              aria-labelledby="dropdownMenuButton2"
+              data-twe-dropdown-menu-ref>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700
+                   hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline
+                    dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="#"
+                  data-twe-dropdown-item-ref
+                  >1 año</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700
+                   hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline
+                    dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="#"
+                  data-twe-dropdown-item-ref
+                  >2 años</a>
+              </li>
+              <li>
+                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700
+                   hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline
+                    dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="#"
+                  data-twe-dropdown-item-ref>3 años</a>
+              </li>
+            </ul>
+            
+            <button
+              type="button"
+              data-twe-ripple-init
+              data-twe-ripple-color="light"
+              class="inline-block rounded bg-yellow-300 px-6 pb-2 pt-2.5 text-xs font-medium  leading-normal
+              text-black shadow-primary-3 transition duration-150 ease-in-out hover:focus:bg-yellow-500 hover:shadow-primary-2 
+              focus:bg-yellow-500 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2
+              motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong
+              dark:active:shadow-dark-strong mt-4 ml-5">
+              Simular inversión
+            </button>
+          </div>
+    </form>
+    
     
 
+    <div class="flex flex-col ml-[400px] h-[310px] items-center w-[600px] mx-11 max-w-[550px] p-16 pb-6 -mt-[230px]
+    bg-white rounded-lg shadow-xl sm:p-8">
+      <h2 class="text-xl font-bold">Rendimiento</h2>
+      <div class="flex items-end flex-grow w-64 mt-2 space-x-2 sm:space-x-3">
+          <div class="relative flex flex-col items-center flex-grow pb-5 group">
+              <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$100,500</span>
+              <div class="flex items-end w-full">
+                  <div class="relative flex justify-center flex-grow h-12 bg-lime-500"></div>
+              </div>
+              <span class="absolute bottom-0 text-xs font-bold">1 año</span>
+          </div>
+          <div class="relative flex flex-col items-center flex-grow pb-5 group">
+              <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$45,000</span>
+              <div class="flex items-end w-full">
+                  <div class="relative flex justify-center flex-grow h-16 bg-lime-500"></div>
+              </div>
+              <span class="absolute bottom-0 text-xs font-bold">2 años</span>
+          </div>
+          <div class="relative flex flex-col items-center flex-grow pb-5 group">
+              <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$50,000</span>
+              <div class="flex items-end w-full">
+                  <div class="relative flex justify-center flex-grow h-24 bg-lime-500"></div>
+              </div>
+              <span class="absolute bottom-0 text-xs font-bold">3 años</span>
+          </div>
+          <div class="relative flex flex-col items-center flex-grow pb-5 group">
+              <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$47,500</span>
+              <div class="flex items-end w-full">
+                  <div class="relative flex justify-center flex-grow h-28 bg-lime-500"></div>
+              </div>
+              <span class="absolute bottom-0 text-xs font-bold">4 años</span>
+          </div>
+          <div class="relative flex flex-col items-center flex-grow pb-5 group">
+              <span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">$105,000</span>
+              <div class="flex items-end w-full">
+                  <div class="relative flex justify-center flex-grow h-32 bg-lime-500"></div>
+              </div>
+              <span class="absolute bottom-0 text-xs font-bold">5 años</span>
+          </div>
+      </div>
+  </div>
+  
+	<div class="boton-inversion">
+    <button
+   type="button" data-twe-ripple-init data-twe-ripple-color="light" class="inline-block rounded bg-lime-500 px-6 pb-2 pt-2.5 text-xs font-bold  leading-normal
+   text-black  shadow-primary-3  transition duration-150 ease-in-out hover:focus:bg-lime-600 hover:shadow-primary-2 
+   focus:bg-lime-500 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2
+              motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong
+              dark:active:shadow-dark-strong mt-4 ml-5">
+              Invertir ahora
+  </button>
+  <div >
+    <button
+   type="button" data-twe-ripple-init data-twe-ripple-color="light" class="inline-block rounded bg-zinc-300 px-6 pb-2 pt-2.5 text-xs font-bold  leading-normal
+   text-black shadow-primary-3 transition duration-150 ease-in-out hover:focus:bg-lime-600 hover:shadow-primary-2 
+   focus:bg-lime-500 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2
+              motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong
+              dark:active:shadow-dark-strong mt-4 ml-5">
+              Comparar
+  </button>
+  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </div>
+  <section class="seccion-opciones-inversion" >
+    <h2 class="encabezado-opcion-inversiones">
+      Compara tus opciones de
+      <br>
+      inversión
+    </h2>
+    <p class="parrafo-inversion">
+      Explora y encuentra la inversión perfecta que se alinee con tus metas financieras 
+      <br>a través de nuestra innovadora herramienta de simulación. Compara diversas <br> 
+      opciones de inversión de manera intuitiva y comprensible, adaptada a tus <br>
+      necesidades específicas.
+    </p>
+    <img class="imagen-seccion-inversion" src="/img/img-inversion.png"/>
+    <button class="bg-transparent hover:bg-white text-white font-semibold
+   hover:text-white py-2 px-4 border border-white hover:border-transparent rounded mt-[2%] ml-72">
+    Realizar solicitud
+    </button>
+  </section>
+  
+  <section class="seccion-frase ">
     
+  <h2 class="flex flex-col items-center justify-center h-screen ml-72 -mt-[320px] text-center"><span>La inversión en conocimiento siempre </span>
+    <span>paga el mejor interés.</span>
+  </h2>
+    <img src="public\img\img-frase.png" class="float-left ml-52 -mt-32 z-50 absolute w-16 h-14"/>
+    <h4 class="flex flex-col items-center justify-center h-screen ml-[550px] -mt-[240px] text-center">Benjamin Franklin</h4>
+    <img class="ml-[48%] mt-20 w-20"  src="public/img/img-mano-dinero.png"/>
+  </section>
+  
+
+  </div>
+
+  <!--
+  Heads up! 👋
+
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+
+  Plugins:
+    - @tailwindcss/forms
+-->
+
+<footer class="bg-white mt-[130%]">
+  
+  <div class="mx-auto max-w-screen-xl px-8 pb-6 pt-16 sm:px-6 lg:px-12">
+    <div class="lg:flex lg:items-center lg:justify-between">
+       <image src="/public/img/img-logotipo-bn.png" class="w-80 mt-24"></image>
+    
+        <svg class="h-8" viewBox="0 0 118 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        </svg>
+    </div>
+    <div
+      class="mt-0 grid grid-cols-1 gap-8 pt-16 md:grid-cols-4 lg:grid-cols-5"
+    >
+      <div class="text-center sm:text-left">
+        <p class="text-lg font-medium text-gray-900">Nuestros servicios</p>
+
+        <ul class="mt-8 space-y-4 text-sm">
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-700/75" href="#">
+              Simulador individual
+            </a>
+          </li>
+
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-700/75" href="#"> Simulador comparativo </a>
+          </li>
+
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-700/75" href="#">
+              Reallizar solicitud 
+            </a>
+          </li>
+
+          
+        </ul>
+      </div>
+
+      <div class="text-center sm:text-left">
+        <p class="text-lg font-medium text-gray-900">Acerca de nosotros</p>
+
+        <ul class="mt-8 space-y-4 text-sm">
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-700/75" href="#">
+              ¿Quiénes somos?
+            </a>
+          </li>
+
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-700/75" href="#"> Contáctanos </a>
+          </li>
+
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-700/75" href="#"> Soporte </a>
+          </li>
+
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-700/75" href="#"> Preguntas </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-center sm:text-left">
+        <p class="text-lg font-medium text-gray-900">Contacto</p>
+
+        <ul class="mt-8 space-y-4 text-sm">
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-700/75 flex items-center" href="#"> 
+                <img src="/public/img/img-phone.png" class="w-5 mr-2" alt="Icono">
+                123-456-78-90 
+            </a>
+          </li>
+
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-700/75 flex items-center" href="#"> 
+                <img src="/public/img/img-email.png" class="w-5 mr-2" alt="Icono">
+                proinvest@gmail.com
+            </a>
+          </li>
+
+          </li>
+        </ul>
+      </div>
+
+     
+
+      <div class="text-center sm:text-left md:col-span-4 lg:col-span-2">
+        <p class="text-lg font-medium text-gray-900">Dudas</p>
+
+        <div class="mx-auto mt-8 max-w-md sm:ms-0">
+          <p class="text-center leading-relaxed text-gray-500 ltr:sm:text-left rtl:sm:text-right">
+            ¿Tienes alguna duda? <br>
+            Ingresa tu correo y uno de nuestros asesores se contactara contigo
+          </p>
+
+          <form class="mt-4">
+            <div class="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-start">
+              <label for="email" class="sr-only">Email</label>
+
+              <input
+                class="w-full rounded-full border-gray-200 px-6 py-3 shadow-sm"
+                type="email"
+                placeholder="Ejemplo: dms19@hotmail.com"
+              />
+
+              
+              <button
+        type="button"
+        data-twe-ripple-init
+        data-twe-ripple-color="light"
+        class="inline-block rounded bg-blue-950 mx-48 px-6 pb-2 pt-2.5 text-sm font-bold leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out
+         hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-blue-950 focus:shadow-primary-2 focus:outline-none focus:ring-0
+          active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none
+         dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+      >
+        Enviar
+      </button>
+                
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</footer>
+  
+<section>
+  <div class="mt-20 bg-blue-900 pt-6 sm:flex sm:justify-between w-full h-10">
+      <p class="text-center text-sm text-white sm:text-left ml-4 -mt-4">
+        Política de privacidad
+      </p>
+
+      <p class="text-center text-sm text-white sm:text-left ml-4 -mt-4">
+        &copy; 2024 ProInvest Latinoamérica | Todos los derechos reservados 
+      </p>
+
+      <ul class="mt-8 flex justify-center gap-6 sm:mt-0 sm:justify-start">
+        <li>
+          <a
+            href="#"
+            rel="noreferrer"
+            target="_blank"
+            class="text-white transition hover:text-white"
+          >
+            <span class="sr-only">Facebook</span>
+            <svg class="h-6 -w-8 -mt-4 relative -left-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#"
+            rel="noreferrer"
+            target="_blank"
+            class="text-white transition hover:text-white"
+          >
+            <span class="sr-only">Instagram</span>
+            <svg class="h-6 w-6 -mt-4 relative -left-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#"
+            rel="noreferrer"
+            target="_blank"
+            class="text-white transition hover:text-white"
+          >
+            <span class="sr-only">Twitter</span>
+            <svg class="h-6 w-6 -mt-4 relative -left-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+              />
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#"
+            rel="noreferrer"
+            target="_blank"
+            class="text-white transition hover:text-white"
+          >
+            <span class="sr-only">GitHub</span>
+            <svg class="h-6 w-6 -mt-4 relative -left-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+</section>
+
+
+
     <script type="module" src="scripts/init.js"></script>
+    <script type="module" src="scripts/text.js"></script>
+    <script type="module" src="scripts/dropbox.js"></script>
   </body>
 </html>

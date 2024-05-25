@@ -3,19 +3,21 @@
 
 @layer base {
   html {
-    @apply text-[#4f4f4f];
+    @apply text-surface;
+    @apply bg-white;
   }
   html.dark {
     @apply text-neutral-50;
-    @apply bg-neutral-800;
+    @apply bg-body-dark;
   }
 }
 
 @tailwind components;
 @tailwind utilities;
-@tailwind components;
-@tailwind utilities;
 
+p {
+  @apply leading-[1.6];
+}
 @font-face {
   font-family: "MontserratFont";
   src: url("/public/fonts/Montserrat-Italic-VariableFont_wght.ttf")
@@ -41,7 +43,7 @@
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-image: url("public/img/img-inversion-encabezado.png");
+  background-image: url("/img/img-inversion-encabezado.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -56,7 +58,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 99.5%;
+  height: 100%;
   background-color: rgba(63, 63, 63, 0.68);
   z-index: 1;
 }
@@ -110,7 +112,7 @@
   top: 595px; /* Desde la parte superior */
   left: 0; /* Desde la izquierda */
   width: 100%; /* Ancho completo */
-  height: 200px; /* La mitad de la altura de la pantalla */
+  height: 190px; /* La mitad de la altura de la pantalla */
   background-color: #f3f4f6; /* Color gris */
   z-index: -1; /* Para que esté detrás del contenido */
 }
@@ -128,13 +130,13 @@
 
 .titulo {
   position: absolute; /* Fijar la posición */
-  top: 30px; /* Desde la parte superior */
+  top: -355px; /* Desde la parte superior */
   left: 0px; /* Desde la izquierda */
   width: 100%; /* Ancho completo */
-  height: 600px; /* La mitad de la altura de la pantalla */
+  height: 800px; /* La mitad de la altura de la pantalla */
   justify-content: center;
   color: #000000;
-  font-size: 250%;
+  font-size: 260%;
   font-family: "Poppins", Poppins;
   z-index: 1; /* Para que esté detrás del contenido */
   display: flex;
@@ -142,7 +144,7 @@
 
 .subtitulo {
   position: absolute; /* Fijar la posición */
-  top: 80px; /* Desde la parte superior */
+  top: -300px; /* Desde la parte superior */
   left: 0px; /* Desde la izquierda */
   width: 100%; /* Ancho completo */
   height: 1000px; /* La mitad de la altura de la pantalla */
@@ -159,12 +161,132 @@
   justify-content: center;
 }
 
-.line {
-  background: repeating-linear-gradient(
-    to bottom,
-    #eee,
-    #eee 1px,
-    #fff 1px,
-    #fff 8%
-  );
+.seccion-white {
+  position: absolute; /* Fijar la posición */
+  top: 1195px; /* Desde la parte superior */
+  left: 0; /* Desde la izquierda */
+  width: 100%; /* Ancho completo */
+  height: 150px; /* La mitad de la altura de la pantalla */
+  background-color: #ffffff; /* Color gris */
+  z-index: 1; /* Para que esté detrás del contenido */
+}
+
+.custom-input-container {
+  max-width: 200px; /* Ajusta este valor según sea necesario */
+  margin-left: 50px; /* Mueve el contenedor a la izquierda */
+  margin-top: -170px;
+  z-index: 4;
+}
+
+/* Contenedores dropdown */
+.personalizacion-dropdown {
+  max-width: 200px; /* Ajusta este valor según sea necesario */
+  margin-left: 50px; /* Mueve el contenedor a la izquierda */
+  margin-top: 20px;
+  z-index: 1; /* Z-index bajo para el contenedor */
+  position: relative; /* Necesario para el z-index funcionar */
+}
+
+.seccion-opciones-inversion {
+  position: absolute; /* Fijar la posición */
+  top: 210px; /* Desde la parte superior */
+  left: 0; /* Desde la izquierda */
+  width: 100%; /* Ancho completo */
+  height: 410px; /* La mitad de la altura de la pantalla */
+  background-color: #0a1d56; /* Color gris */
+  z-index: 5; /* Para que esté detrás del contenido */
+}
+
+.boton-inversion {
+  max-width: 200px; /* Ajusta este valor según sea necesario */
+  margin-left: 1030px; /* Mueve el contenedor a la izquierda */
+  margin-top: -236px;
+  z-index: 1; /* Z-index bajo para el contenedor */
+  font-family: "RalewayFont", RalewayFont;
+  font-weight: bold;
+  position: relative; /* Necesario para el z-index funcionar */
+}
+
+.encabezado-opcion-inversiones {
+  position: absolute; /* Fijar la posición */
+  top: 50px; /* Desde la parte superior */
+  left: -295px; /* Desde la izquierda */
+  width: 100%; /* Ancho completo */
+  height: 800px; /* La mitad de la altura de la pantalla */
+  justify-content: center;
+  color: #ffffff;
+  font-size: 260%;
+  font-family: "Poppins", Poppins;
+  z-index: 4; /* Para que esté detrás del contenido */
+  display: flex;
+}
+
+.parrafo-inversion {
+  color: #ffffff;
+  font-size: 105%;
+  font-family: "RalewayFont", RalewayFont;
+  margin-top: 180px;
+  margin-left: 60px;
+  z-index: 4; /* Para que esté detrás del contenido */
+  display: flex;
+}
+
+.imagen-seccion-inversion {
+  position: absolute;
+  top: 45px; /* Desde la parte superior */
+  width: 30%;
+  left: 723px;
+  z-index: 6; /* Para que esté detrás del contenido */
+  display: flex;
+}
+
+button {
+  font-family: "RalewayFont", RalewayFont;
+}
+
+.seccion-frase {
+  position: absolute; /* Fijar la posición */
+  top: 610px; /* Desde la parte superior */
+  left: 0; /* Desde la izquierda */
+  width: 100%; /* Ancho completo */
+  height: 560px; /* La mitad de la altura de la pantalla */
+  background-color: #f4f4f4; /* Color gris */
+  z-index: 4; /* Para que esté detrás del contenido */
+}
+
+.seccion-frase::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/Imagen2.png");
+  top: -50px; /* Desde la parte superior */
+  left: 0; /* Desde la izquierda */
+  width: 100%; /* Ancho completo */
+  height: 350px; /* La mitad de la altura de la pantalla */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  z-index: 4;
+}
+
+h2 {
+  display: flex; /* Utiliza flexbox */
+  position: absolute; /* Fijar la posición */
+  justify-content: center;
+  color: #000000;
+  font-size: 230%;
+  font-family: "Poppins", Poppins;
+  z-index: 12; /* Para que esté detrás del contenido */
+}
+
+h4 {
+  display: flex; /* Utiliza flexbox */
+  position: absolute; /* Fijar la posición */
+  justify-content: center;
+  color: #0a1d56;
+  font-size: 130%;
+  font-family: "RalewayFont", RalewayFont;
+  z-index: 12; /* Para que esté detrás del contenido */
 }
